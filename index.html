@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Simple Tailwind Starter</title>
+  </head>
+  <body>
+    <div class="mx-10 my-4 bg-grey-300">
+      <!-- Nav Section -->
+      <section class="mx-10" id="nav">
+        <div class="flex justify-between items-center">
+          <img class="w-40" src="images/logo.svg" alt="company logo" />
+          <img class="absolute right-52 top-0" src="images/lines.svg" alt="" />
+          <div class="flex w-40 gap-6">
+            <p>Galeria zdjęć</p>
+            <p>FaQ</p>
+          </div>
+
+          <button
+            class="bg-blue-600 border-2 border-blue-500 px-2 py-2 rounded-xl w-40 text-white font-semibold"
+          >
+            Zadzwoń do nas
+          </button>
+        </div>
+      </section>
+
+      <!-- Hero Section -->
+      <section class="my-20 flex" id="hero">
+        <div class="flex gap-14 flex-col ml-10">
+          <h1 class="text-5xl uppercase font-bold">
+            Sprzedajemy samochody <br />
+            z Europy
+          </h1>
+
+          <p>
+            Kup komfortowy pojazd, aby każda podróż <br />
+            była wyjątkowym przeżyciem.
+          </p>
+          <div class="flex gap-5">
+            <button
+              class="bg-blue-600 border-2 border-blue-500 px-2 py-2 rounded-xl w-40 text-white font-semibold"
+            >
+              Zobacz zdjęcia
+            </button>
+
+            <button
+              class="bg-white border-2 border-blue-500 px-2 py-2 rounded-xl w-40 text-blue-500 font-semibold"
+            >
+              Zadzwoń do nas
+            </button>
+          </div>
+        </div>
+        <div class="bg-emerald-400 min-w-50">
+          <img class="absolute right-0 bottom-0" src="images/Hero.svg" alt="" />
+        </div>
+      </section>
+
+      <div class="mx-auto px-6 pt-52 pb-10">
+        <h2 class="text-blue-600 text-sm uppercase font-bold">
+          Prezentacja firmy
+        </h2>
+        <h1 class="text-4xl font-bold text-gray-900 mt-2">
+          ZOBACZ NASZĄ GALERIĘ ZDJĘĆ
+        </h1>
+
+        <!-- Navigation Links -->
+        <div class="mt-6">
+          <a
+            href="#"
+            class="text-blue-600 font-semibold mr-6 border-b-2 border-blue-600"
+            >Samochody osobowe</a
+          >
+          <a href="#" class="text-gray-600 font-semibold"
+            >Samochody dostawcze</a
+          >
+        </div>
+      </div>
+
+      <!-- Car Gallery -->
+      <div class="mx-auto px-6 flex justify-center gap-8">
+        <!-- Car 1 -->
+        <div class="w-1/2">
+          <img
+            src="images/car1.png"
+            alt="Car 1"
+            class="w-full h-auto object-cover"
+          />
+        </div>
+        <!-- Car 2 -->
+        <div class="w-1/2">
+          <img
+            src="images/car2.png"
+            alt="Car 2"
+            class="w-full h-auto object-cover"
+          />
+        </div>
+        <!-- Car 3 -->
+        <div class="w-1/2">
+          <img
+            src="images/car3.png"
+            alt="Car 1"
+            class="w-full h-auto object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- Dots -->
+      <div class="flex justify-center mt-6">
+        <span class="w-3 h-3 bg-blue-600 rounded-full mx-1"></span>
+        <span class="w-3 h-3 bg-gray-300 rounded-full mx-1"></span>
+        <span class="w-3 h-3 bg-gray-300 rounded-full mx-1"></span>
+        <span class="w-3 h-3 bg-gray-300 rounded-full mx-1"></span>
+      </div>
+    </div>
+
+    <section class="py-10 bg-customGray px-10 text-white">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- First Box -->
+        <div class="p-6">
+          <h2 class="text-xl font-semibold uppercase">
+            Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
+            nulla commodo.
+          </h2>
+          <p class="mt-4">
+            Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec
+            egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac
+            venenatis eros ipsum ac arcu. Vestibulum et [...]
+          </p>
+          <div class="mt-6">
+            <a href="#" class="flex items-center space-x-2">
+              <span class="border-b-2">Rozwiń &darr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Second Box -->
+        <div class="p-6">
+          <h2 class="text-xl font-semibold uppercase">
+            Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
+            nulla commodo.
+          </h2>
+          <p class="mt-4">
+            Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec
+            egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac
+            venenatis eros ipsum ac arcu. Vestibulum et [...]
+          </p>
+          <div class="mt-6">
+            <a href="#" class="flex items-center space-x-2">
+              <span class="border-b-2">Rozwiń &darr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-customGray py-6 text-white px-14">
+      <div class="container mx-auto flex justify-between items-center text-sm">
+        <p>Cars Spot</p>
+        <a href="#" class="border-b-2">Polityka prywatności</a>
+      </div>
+    </footer>
+  </body>
+</html>
